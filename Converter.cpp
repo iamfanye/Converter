@@ -41,5 +41,50 @@ Converter::Converter(QWidget *parent):QWidget(parent)
 
 void Converter::ConvertClicked()
 {
-
+    //get the non-empty lineedit filled nums
+    switch(WhichisOK())
+    {
+    case bin:
+        Convert2Oct();
+        Convert2Dec();
+        Convert2Hex();
+        break;
+    case oct:
+        Convert2Bin();
+        Convert2Dec();
+        Convert2Hex();
+        break;
+    case dec:
+        Convert2Bin();
+        Convert2Oct();
+        Convert2Hex();
+        break;
+    case hex:
+        Convert2Bin();
+        Convert2Oct();
+        Convert2Dec();
+        break;
+    default:break;
+    }
 }
+
+nonEmpty Converter::WhichisOK()
+{
+}
+
+void Converter::Convert2Bin()
+{
+}
+
+void Converter::Convert2Oct()
+{
+}
+
+void Converter::Convert2Dec()
+{
+}
+
+void Converter::Convert2Hex()
+{
+}
+
