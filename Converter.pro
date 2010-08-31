@@ -1,7 +1,9 @@
 
 HEADERS += \
-    Converter.h
+    Converter.h \
+    QList.h
 
 SOURCES += \
     Converter.cpp \
-    Main.cpp
+    Main.cpp \
+    QList.cpp

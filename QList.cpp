@@ -1,0 +1,8 @@
+#include "QList"
+
+
+
+QList::QList()
+{
+
+}
